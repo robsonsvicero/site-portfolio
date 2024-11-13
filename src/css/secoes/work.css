@@ -1,0 +1,63 @@
+.works .container-works {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.works .container-works .work {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    position: relative;
+}
+
+.works .container-works .work:hover,
+.works .container-works .work:hover .informacoes-work {
+    opacity: 0.8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.works .container-works .work img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.works .container-works .work .informacoes-work {
+    padding: 20px 20px;
+    background-color: var(--cor-fundo-escuro);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.works .container-works .work .informacoes-work p:nth-child(2) {
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.works .container-works .work h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--cor-fundo-escuro);
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    opacity: 0.6;
+}

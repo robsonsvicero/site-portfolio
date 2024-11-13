@@ -1,0 +1,82 @@
+.letter-banner {
+  color: var(--cor-branca);
+  height: 654px;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: -1;
+  background-image: url(/src/images/work_station_bckgd_big.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 0.1s;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-banner {
+  display: inline-block;
+  font-family: var(--fonte-texto);
+  font-weight: 100;
+  font-style: normal;
+  font-size: 6.4rem;
+  letter-spacing: .16rem;
+  position: relative;
+  color: var(--cor-branca);
+  z-index: 1;
+}
+
+.title-banner #texto {
+  text-transform: uppercase;
+}
+
+.banner-description {
+  font-family: var(--fonte-titulo);
+  font-size: var(--fonte-g);
+  line-height: 2.8rem;
+  font-weight: 300;
+  margin-top: 32px;
+}
+
+.banner-description strong {
+  color: var(--cor-primaria);
+}
+
+.letter-banner .next-section {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  z-index: 1;
+}
+
+.letter-banner .next-section .fa-chevron-down {
+  font-size: 3.2rem;
+  animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+.letter-banner .next-section .fa-chevron-down:hover {
+  color: var(--cor-primaria);
+}
+
+@keyframes downarrow {
+  0% {-webkit-transform: translateY(0); opacity: 0.4;}
+  100% {-webkit-transform: translateY(0.7em); opacity: 0.9;}
+}

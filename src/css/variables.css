@@ -1,0 +1,26 @@
+:root {
+    --cor-primaria: #4169E1;
+    --cor-secundaria: #800020;
+    --sombra-urbana: #232323;
+    --cor-branca: #fff;
+    --cor-text: #333333;
+    --cor-fundo-escuro: #040203;    
+    --cor-fundo-cinza-escuro: #282828;
+    --cor-fundo-cinza-claro: #353535;    
+    --degrade-fundo: linear-gradient(180deg, rgba(2,1,19,1) 0%, rgba(86,19,41,1) 70%);
+  }
+    
+  :root {
+    --fonte-texto: 'Roboto', sans-serif;
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-exg: 5.6rem;
+    --fonte-xg: 4.4rem;
+    --fonte-g: 2.4rem;
+    --fonte-m: 1.6rem;
+  }
+  
+  :root {
+    --desktop-padding: 10rem 10%;
+    --tablet-padding: 6rem 10%;
+    --mobile-padding: 4rem 1.6rem;
+  }

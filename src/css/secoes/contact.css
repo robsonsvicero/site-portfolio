@@ -1,0 +1,18 @@
+.contact {    
+    background-color: #fafafa;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.8rem;
+    align-items: center;
+}

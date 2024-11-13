@@ -1,0 +1,39 @@
+.expertise {
+    background-color: #fafafa;
+}
+.cards-expertise {
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
+
+.cards .card {
+    width: 30%;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.cards .card h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--cor-text);
+}
+
+.cards .card h3 i {
+    color: var(--cor-primaria);
+    margin-right: 16px;
+}
+
+.cards .card p {
+    font-size: var(--fonte-m);
+    font-weight: 400;
+    color: var(--cor-text);
+    line-height: 2.8rem;
+
+}
