@@ -38,26 +38,30 @@
 <body>
   <header class="header" id="header">
     <div class="container">
-      <div class="row justify-content-between align-ítems-center">
+      <div class="container-header" id="menu-header" >
 
-        <a href="#" class="component-logo" display="">
-          <div class="logo" id="logo"></div>
+        <a href="#" id="logo" class="component-logo" display="">
+          <img src="./src/images/logo/símbolo_branco.png" alt="">
         </a>
 
-        <nav>
-          <input id="menu-hamburguer" type="checkbox" />
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
 
-          <label for="menu-hamburguer">
-            <div class="menu" id="bkg-menu">
-              <span class="hamburguer" id="hamburguer"></span>
-            </div>
-          </label>
+        <label for="menu-toggle" class="hamburguer" id="bkg-menu">
+          <span id="hamburger"></span>
+          <span id="hamburger2"></span>
+          <span id="hamburger3"></span>
+        </label>
+
+        <nav class="nav" onclick="closeMenu()">
+          <a href="#" class="component-logo" display="">
+            <img src="./src/images/logo/símbolo_branco.png" alt="">
+          </a>
 
           <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
+            <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
+            <li><a href="#habilidades" onclick="closeMenu()">Habilidades</a></li>
+            <li><a href="#projetos" onclick="closeMenu()">Projetos</a></li>
           </ul>
         </nav>
       </div>

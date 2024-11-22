@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 112px;
+}
+
 body {
   font-family: var(--fonte-texto);
   font-size: var(--fonte-m);
@@ -57,8 +61,8 @@ body {
 
 .decorBar {
   width: 180px;
-  height: 1.5px;
-  background-color: var(--cor-primaria);
+  height: 2px;
+  background-color: var(--cor-secundaria);
 }
 
 .button {

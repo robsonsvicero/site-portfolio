@@ -35,6 +35,10 @@
     font-size: 3.2rem;
 }
 
+.social ul li a i:hover{
+    transform: scale(1.3) rotate(-8deg);
+}
+
 .social .rp-footer {
     margin-top: 32px;
     color: #ffffff80;
