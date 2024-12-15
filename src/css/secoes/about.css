@@ -5,7 +5,7 @@
 .about .informacoes-about {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   align-items: center;
 }
 
@@ -21,4 +21,25 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about-img {
+  width: 40%;
+  margin-left: 80px;
+}
+
+img {
+  width: 50%;
 }
