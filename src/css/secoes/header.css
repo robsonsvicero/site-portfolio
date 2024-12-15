@@ -63,7 +63,7 @@
   background-color: var(--cor-primaria);  
 }
 
-.menu-toggle:checked + .hamburguer:hover {
+.menu-toggle:checked + .hamburguer {
   background-color: var(--cor-branca);
 }
 
