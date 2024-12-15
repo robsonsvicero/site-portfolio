@@ -25,9 +25,10 @@
     color: var(--cor-text);
 }
 
-.cards .card h3 i {
+.cards .card i {
+    font-size: 6.4rem;
     color: var(--cor-secundaria);
-    margin-right: 16px;
+    margin-bottom: 24px;
 }
 
 .cards .card p {
