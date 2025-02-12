@@ -1,4 +1,4 @@
-.contact {    
+/* .contact {    
     background-color: #fafafa;
 }
 
@@ -15,4 +15,145 @@
     justify-content: center;
     line-height: 2.8rem;
     align-items: center;
+} */
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #094b7e10;
+    font-family: var(--fonte-texto);
+}
+
+.chamada {
+    margin-bottom: 32px;
+}
+
+.chamada h2 {
+    color: var(--cor-text);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.chamada p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #33333386;
+}
+
+form {
+    width: 100%;
+    max-width: 50rem;
+}
+
+form p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+label,
+input,
+textarea,
+button {
+	display: block;
+}
+
+input,
+textarea,
+button {
+	width: 100%;
+	font: inherit;
+	padding: 1.25rem;
+	font-weight: 700;
+}
+
+input,
+textarea {
+	margin-bottom: 1rem;
+	color: white;
+	background: #32364431;
+	border: 0.125rem solid transparent;
+	border-radius: 1.125rem;
+	transition: border-color 0.3s,
+		box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+	outline: none;
+	border-color: var(--azul-500);
+	box-shadow: 0 0 0 0.3125rem var(--azul-300);
+}
+
+label {
+	margin-bottom: 0.5rem;
+	color: #84868f;
+}
+
+textarea {
+	min-height: 12.5rem;
+	resize: vertical;
+}
+
+button {
+    padding: 24px 60px;
+    font-size: var(--fonte-normal);
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color:var(--cor-primaria);
+    color: white;
+	border-radius: 99px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+	outline: none;
+	background-color: transparent;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+button:disabled {
+	cursor: not-allowed;
+	background-color: #555b69;
+}
+
+/**/
+
+.popup-message {
+	position: fixed;
+	top: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #4caf50;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	z-index: 1000;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.popup-message.error {
+	background: #d9534f;
+}
+
+.popup-message.fade-out {
+	opacity: 0;
+}
+
+/* Borda vermelha para campos não preenchidos */
+.error-border {
+	border: 2px solid #d9534f !important;
 }
