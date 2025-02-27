@@ -1,127 +1,108 @@
 .header {
-  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 10px 20px;
-  background: transparent;
-  z-index: 1000;
+  padding: 40px 10%;
+  background-color: var(--cor-branca);  
+  z-index: 10;
 }
 
-.container-header {
+/* Container para sobrepor as imagens */
+.logo-container {
+  position: relative;
+  width: fit-content;
+}
+
+/* Ambas as imagens devem ocupar o mesmo espaço */
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Container */
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 12px 10%;
+  padding: 0px;
 }
 
-.menu-toggle {
-  display: none;
-}
-
-.header .hamburguer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  gap: 6px;
-  cursor: pointer;
-  z-index: 1001;
-  padding: 16px;
-  border-radius: 6px;
-  transition: all 0.5s ease-in-out;
-}
-
-.header .hamburguer:hover {
-  background-color: var(--cor-primaria);
-  transition: 0.5s;
-}
-
-.header .hamburguer span {
-  display: block;
-  height: 3px;
-  width: 30px;
-  background-color: var(--cor-branca);
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* TRANSFORMANDO O HAMBURGER EM "X" */
-.menu-toggle:checked + .hamburguer span:nth-child(1) {
-  transform: translateY(8px) rotate(-45deg);
-  background-color: var(--cor-primaria);  
-}
-
-.menu-toggle:checked + .hamburguer span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle:checked + .hamburguer span:nth-child(3) {
-  transform: translateY(-10px) rotate(45deg);
-  background-color: var(--cor-primaria);  
-}
-
-.menu-toggle:checked + .hamburguer {
-  background-color: var(--cor-branca);
-}
-
-/* ESTILO DO  NAV */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+.header-content {
+  position: relative;
   width: 100%;
-  height: 100%;
-  background-color: var(--cor-branca);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
-  z-index: 999;
 }
 
-.nav ul {
+.header-content .logo-container {
+  width: 80px;
+  height: 65px;
+}
+
+.header-content .logo-container img {
+  width: 100%;
+}
+
+/* ===== MENU DESKTOP ===== */
+.nav-list {
   list-style: none;
-  text-align: left;
-  margin-left: 180px;
+  display: flex;
+  gap: 40px;
 }
 
-.nav ul li {
-  margin: 20px;
+.nav-list li {
+  display: inline;
 }
 
-.nav ul li a {
+.nav-list a {
   text-decoration: none;
   color: var(--cor-primaria);
-  font-size: 2rem;
-  transition: color 0.3s;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
-.nav ul li a:hover {
-  color: #5FB2D8;
+.nav-list a:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
 }
 
-/* Mostra o menu quando o checkbox está marcado */
-.menu-toggle:checked ~ .nav {
-  transform: translateY(0);
+/* ===== MENU MOBILE ===== */
+.mobile-menu {
+  /* position: relative; */
+  display: none;
+  flex-direction: column;
+  padding: 18px 12px;
+  border-radius: 50%;
+  background-color: var(--cor-secundaria);
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100; /* Mantém o menu sobre os outros elementos */
 }
 
-.hamburguer span.alterado {
-  background-color: var(--cor-branca);
+.mobile-menu span {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+  border-radius: 4px;
 }
 
-.menu-toggle:checked + .hamburguer:hover span{
-  scale: none;
+/* Animação do hambúrguer */
+.header-content .mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
-
-.header .hamburguer:hover span {
-  scale: .8;
-  background-color: var(--cor-branca);
+.header-content .mobile-menu.active .line2 {
+  opacity: 0;
+  width: 0px;
+  transition: all 0.5s;
 }
-
-.header label.fundo {
-  background-color: var(--sombra-urbana);
+.header-content .mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-6px, -5px);
 }

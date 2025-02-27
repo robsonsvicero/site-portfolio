@@ -2,10 +2,10 @@
     --cor-primaria: #094C7E;
     --cor-secundaria: #800020;
     --sombra-urbana: #232323;
-    --cor-branca: #fff;
+    --cor-branca: #ffffff;
     --cor-text: #333333;
-    --cor-fundo-escuro: #040203;    
-    --cor-fundo-cinza-escuro: #282828;
+    --cor-fundo-escuro: #050505;    
+    --cinza-escuro: #282828;
     --cor-fundo-cinza-claro: #c1c1c1;    
     --degrade-fundo: linear-gradient(180deg, rgba(2,1,19,1) 0%, rgba(86,19,41,1) 70%);
   }

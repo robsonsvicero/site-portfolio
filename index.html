@@ -14,12 +14,20 @@
   <!-- FONTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
+  <!-- Link para o SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./src/fontawesome/css/all.css">
   <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/loader.css">
   <link rel="stylesheet" href="./src/css/variables.css">
   <link rel="stylesheet" href="./src/css/global.css">
   <link rel="stylesheet" href="./src/css/secoes/responsive.css">
@@ -35,34 +43,31 @@
 </head>
 
 <body>
-  <header class="header" id="header">
-    <div class="container">
-      <div class="container-header" id="menu-header">
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-content row justify-content-between align-items-center">
 
-        <a id="logo" class="component-logo" display="">
-          <img src="./src/images/logo/símbolo_branco.png" alt="">
-        </a>
+        <div class="logo-container">
+          <img src="./src/images/logo/símbolo_azul.png" alt="Logo azul" class="logo logo-blue">
+        </div>
 
-        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <!-- Menu de navegação -->
+        <nav>
+          <div class="mobile-menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
 
-        <label for="menu-toggle" class="hamburguer" id="bkg-menu">
-          <span id="hamburger"></span>
-          <span id="hamburger2"></span>
-          <span id="hamburger3"></span>
-        </label>
-
-        <nav class="nav" onclick="closeMenu()">
-          <a href="#" class="component-logo" display="">
-            <img src="./src/images/logo/símbolo_azul.png" alt="">
-          </a>
-
-          <ul>
+          <ul class="nav-list">
             <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
-            <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
-            <li><a href="#expertise" onclick="closeMenu()">Habilidades</a></li>
+            <li><a href="#expertises" onclick="closeMenu()">Serviços</a></li>
             <li><a href="#works" onclick="closeMenu()">Projetos</a></li>
+            <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
           </ul>
         </nav>
+
       </div>
     </div>
 
@@ -82,7 +87,176 @@
     </div>
     <div class="next-section">
       <div class="btn-next-section">
-        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#expertises"><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise section" id="expertises">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Principais Serviços</h2>
+        <span class="decorBar"></span>
+      </div>
+      <div class="swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <div class="card-link">
+                <img src="./src/images/developer.jpg" alt="Card Image" class="card-image">
+                <p class="badge developer">Programador</p>
+                <h2 class="card-title">Transformo ideias em sites funcionais com código limpo, performance otimizada e
+                  designs que conectam marcas às pessoas.</h2>
+              </div>
+            </li>
+
+            <li class="card-item swiper-slide">
+              <div class="card-link">
+                <img src="./src/images/webdesigner.png" alt="Card Image" class="card-image">
+                <p class="badge webdesigner">Webdesigner</p>
+                <h2 class="card-title">Crio interfaces modernas, responsivas e focadas na melhor experiência do usuário.
+                </h2>
+              </div>
+            </li>
+
+            <li class="card-item swiper-slide">
+              <div class="card-link">
+                <img src="./src/images/ui-designer.png" alt="Card Image" class="card-image">
+                <p class="badge ui-ux">UI & UX</p>
+                <h2 class="card-title">Crio interfaces intuitivas e envolventes, focadas na melhor experiência do
+                  usuário. Aliando estética e funcionalidade, entrego designs que encantam visualmente e facilitam a
+                  navegação.</h2>
+              </div>
+            </li>
+
+            <li class="card-item swiper-slide">
+              <div class="card-link">
+                <img src="./src/images/idv-designer.png" alt="Card Image" class="card-image">
+                <p class="badge designer">Designer de IDV</p>
+                <h2 class="card-title">Desenvolvo identidades visuais autênticas que traduzem a essência da sua marca.
+                  Do conceito ao design final, crio conexões visuais fortes e memoráveis que destacam seu negócio no
+                  mercado.</h2>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="works section" id="works">
+    <div class="container">
+      <div class="section-title">
+        <h2>Projetos Selecionados</h2>
+        <span class="decorBar"></span>
+      </div>
+      <div class="row cards-works">
+        <div class="interface">
+
+          <div class="card-work">
+            <div class="img">
+              <img src="./src/images/sacadasclassz-single-page.png" alt="Sacada Classz">
+            </div>
+            <div class="content">
+              <h2>Sacada Classz</h2>
+              <p class="text">Projeto de identidade visual e site página única para uma empresa que trabalha com
+                fechamento de
+                sacada, guarda-corpo, box e
+                espelhos</p>
+              <div class="buttons">
+                <a id="meu-link" href="https://sacadaclassz.com.br/" rel=”noopener noreferer” target="_blank">
+                  <p>Visite o site</p>
+                </a>
+
+                <a id="meu-link" href="https://www.behance.net/gallery/211657157/Sacada-Classz" rel=”noopener noreferer”
+                  target="_blank">
+                  <p>Visite o projeto de IDV</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-work">
+            <div class="img">
+              <img src="./src/images/isaque-moveis.png" alt="Isaque Moveis">
+            </div>
+            <div class="content">
+              <h2>Isaque Móveis</h2>
+              <p class="text">Projeto de criação da Identidade visual e de um e-commerce para uma loja de móveis.</p>
+              <div class="buttons">
+                <a id="meu-link" href="https://isaquemoveis.com.br" rel=”noopener noreferer” target="_blank">
+                  <p>Visite o site</p>
+                </a>
+
+                <a id="meu-link" href="https://www.behance.net/gallery/188436653/Isaque-Moveis" rel=”noopener noreferer”
+                  target="_blank">
+                  <p>Visite o projeto de IDV</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-work">
+            <div class="img">
+              <img src="./src/images/universal-music.png" alt="Universal Music">
+            </div>
+            <div class="content">
+              <h2>Universal Music</h2>
+              <p class="text">Projeto de UX design para modernização do layout do site da Universal Music Store.</p>
+              <div class="buttons">
+
+                <a id="meu-link" href="https://www.behance.net/gallery/174232557/Universal-Music" rel=”noopener
+                  noreferer” target="_blank">
+                  <p>Visite o projeto de UX</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-work">
+            <div class="img">
+              <img src="./src/images/pokedevs.png" alt="Pokedevs">
+            </div>
+            <div class="content">
+              <h2>Pokedeck (case)</h2>
+              <p class="text">Projeto de página única mostrando um card escolhido num menu lateral, onde esses cards são
+                uma
+                mistura de devs com Pokémons.</p>
+              <div class="buttons">
+                <a id="meu-link" href="https://robsonsvicero.github.io/projeto-pokedevs/" rel=”noopener noreferer”
+                  target="_blank">
+                  <p>Visite o site</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-work">
+            <div class="img">
+              <img src="./src/images/agencia-xyz.png" alt="Agência XYZ">
+            </div>
+            <div class="content">
+              <h2>Agência XYZ (case)</h2>
+              <p class="text">Projeto de landing page para uma agência fictícia, a XYZ, onde utilizamos os conceito de
+                grid e
+                flexbox.</p>
+              <div class="buttons">
+                <a id="meu-link" href="https://robsonsvicero.github.io/landing-page-com-grid-agencia-xyz/" rel=”noopener
+                  noreferer” target="_blank">
+                  <p>Visite o site</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -129,194 +303,37 @@
     </div>
   </section>
 
-  <section class="expertise section" id="expertise">
-    <div class="container">
-      <div class="section-title">
-        <h2>Habilidades</h2>
-        <span class="decorBar"></span>
-      </div>
-      <div class="row cards-expertise">
-        <div class="cards">
-          <div class="card">
-            <i class="fa-solid fa-pen-ruler"></i>
-            <h3>Webdesign</h3>
-            <p>Inicio com o esboço e sigo com o wireframe e o protótipo até o produto final. Com interfaces centradas no
-              usuário, com foco em
-              estrutura de conteúdo, padrões de UI intuitivos
-              e interações simples - tendo em mente
-              que a simplicidade é a sofisticação máxima.</p>
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-code"></i></i>
-            <h3>Front-end</h3>
-            <p>Desenvolvo sites e aplicativos usando HTML, CSS e um toque de JavaScript. Adoro codificar do zero, mas
-              também gosto de trabalhar com frameworks de frontend (WordPress, Framer).</p>
-
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-toolbox"></i>
-            <h3>Outras</h3>
-            <p>Tenho habilidades em outras áreas como SEO e identidade visual. Também possuo competência em gestão de
-              projetos, o que me permite priorizar tarefas de forma eficaz e trabalhar em equipe para cumprir prazos.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="works section" id="works">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Projetos Selecionados</h2>
-          <span class="decorBar"></span>
-        </div>
-        <div class="container-works row">
-
-          <div class="work">
-
-            <img src="src/images/sacadasclassz-single-page.png" alt="Projeto Sacadas Classz" />
-            <div class="informacoes-work">
-              <h3>Projeto Sacadas Classz</h3>
-              <p>Projeto de identidade visual e site página única para uma empresa que trabalha com fechamento de
-                sacada, guarda-corpo, box e
-                espelhos</p>
-              <a id="meu-link" href="https://sacadaclassz.com.br/" rel=”noopener noreferer” target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o site</p>
-              </a>
-              <a id="meu-link" href="https://www.behance.net/gallery/211657157/Sacada-Classz" rel=”noopener noreferer”
-                target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o projeto de IDV</p>
-              </a>
-            </div>
-
-          </div>
-
-          <div class="work">
-            <img src="src/images/isaquemoveis-2023.png" alt="Projeto Isaque Móveis" />
-            <div class="informacoes-work">
-              <h3>Isaque Móveis</h3>
-              <p>Projeto de criação da Identidade visual e de um e-commerce para uma loja de móveis do litoral paulista.
-              </p>
-              <p>(Site feito utilizando WordPress e Elementor)</p>
-              <a id="meu-link" href="https://isaquemoveis.com.br/" rel=”noopener noreferer” target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o site</p>
-              </a>
-              <a id="meu-link" href="https://www.behance.net/gallery/188436653/Isaque-Moveis" rel=”noopener noreferer”
-                target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o projeto de IDV</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="work">
-
-            <img src="src/images/umusic_ux.png" alt="Projeto UX Universal Music" />
-            <div class="informacoes-work">
-              <h3>Universal Music Store</h3>
-              <p>Projeto de UX design para modernização do layout do site da Universal Music Store.</p>
-
-              <a id="meu-link" href="https://www.behance.net/gallery/174232557/Universal-Music" rel=”noopener noreferer”
-                target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o projeto de UX design</p>
-            </div>
-            </a>
-          </div>
-
-
-          <div class="work">
-
-            <img src="src/images/projeto-pokedevs.png" alt="Projeto Pokedevs" />
-            <div class="informacoes-work">
-              <h3>Pokedex - Pokedev</h3>
-              <p>Projeto de página única mostrando um card escolhido num menu lateral, onde esses cards são uma
-                mistura de devs com Pokémons.</p>
-              <a id="meu-link" href="https://robsonsvicero.github.io/projeto-pokedevs/" rel=”noopener noreferer”
-                target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o site</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="work">
-            <img src="src/images/landing-page-com-grid-agencia-xyz.png" alt="Projeto Agência XYZ" />
-            <div class="informacoes-work">
-              <h3>Agência XYZ - LP</h3>
-              <p>Projeto de landing page para uma agência fictícia, a XYZ, onde utilizamos os conceito de grid e
-                flexbox.</p>
-
-              <a id="meu-link" href="https://robsonsvicero.github.io/landing-page-com-grid-agencia-xyz/" rel=”noopener
-                noreferer” target="_blank">
-                <p><i class="fa-solid fa-link"></i> Visite o site</p>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="forms section" id="contact">
-		<div class="chamada">
-			<h2 class="titulo-chamada">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h2>
-			<p class="texto-chamada">Caso tenha ficado com qualquer dúvida basta nos mandar uma <br>mensagem que
-				entraremos em contato o mais breve possível.
-			</p>
-		</div>
-
-		<form action="https://formsubmit.co/ajax/hello@robsonsvicero.com.br" method="post" data-form>
-			<label for="nome">Nome*</label>
-			<input type="text" name="nome" id="nome" required>
-
-			<label for="email">E-mail*</label>
-			<input type="email" name="email" id="email" required>
-
-			<label for="cell">WhatsApp*</label>
-			<input type="tel" name="cell" id="cell" required>
-
-			<label for="mensagem">Mensagem*</label>
-			<textarea name="mensagem" id="mensagem" required></textarea>
-
-			<p>*campos obrigatórios</p>
-
-			<input type="hidden" name="_subject" value="Novo envio!">
-
-			<button type="submit" data-button>Enviar</button>
-		</form>
-
-	</section>
-
-  <!-- <section class="contact section">
-    <div class="container contact-container">
-      <div class="section-title">
-        <h2>Entre em contato</h2>
-        <span class="decorBar"></span>
+    <div class="container">
+      <div class="chamada">
+        <h2 class="titulo-chamada">FICOU COM DÚVIDA? MANDE UMA MENSAGEM!</h2>
+        <p class="texto-chamada">Caso tenha ficado com qualquer dúvida basta mandar uma <br>mensagem que
+          entrarei em contato o mais breve possível.
+        </p>
       </div>
-      <div class="informacoes-about">
-        <div class="text-contact">
-          <p>
-            Procurando um promissor Padawan no front-end? Ou um Cavaleiro Jedi no UI?</p>
 
-          <p>
-            No momento, estou <span>disponível para novas aventuras.</span> Vamos criar algo incrível juntos?
-          </p>
+      <form action="https://formsubmit.co/ajax/hello@robsonsvicero.com.br" method="post" data-form>
+        <label for="nome">Nome*</label>
+        <input type="text" name="nome" id="nome" required>
 
+        <label for="email">E-mail*</label>
+        <input type="email" name="email" id="email" required>
 
-          <div class="botoes row">
-            <a href="mailto: hello@robsonsvicero.com.br" class="button" rel=”noopener noreferer”
-              target="_blank"><span>hello@robsonsvicero.com.br</span></a>
+        <label for="cell">WhatsApp*</label>
+        <input type="tel" name="cell" id="cell" required>
 
-          </div>
-        </div>
-      </div>
+        <label for="mensagem">Mensagem*</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+
+        <p>*campos obrigatórios</p>
+
+        <input type="hidden" name="_subject" value="Novo envio!">
+
+        <button type="submit" data-button>Enviar</button>
+      </form>
     </div>
 
-  </section> -->
+  </section>
 
   <footer class="footer letter-banner section">
     <div class="container social-container banner">
@@ -337,7 +354,8 @@
         </nav>
 
         <div class="buttons btn-social row">
-          <a href="#inicio" class="button btn-btn-social"><i class="fa-brands fa-space-awesome" rel=”noopener noreferer” target="_blank"></i><span>Voltar ao
+          <a href="#inicio" class="button btn-btn-social"><i class="fa-brands fa-space-awesome" rel=”noopener noreferer”
+              target="_blank"></i><span>Voltar ao
               topo</span></a>
 
         </div>
@@ -347,8 +365,8 @@
         </div>
 
         <div class="rp-footer">
-          <p>© 2025 | Desenvolvido por </p><a href="http://robsonsvicero.com.br" rel=”noopener noreferer” target="_blank"><img
-              src="./src/images/logo_robsonsvicero.png" alt="Logo Robson Svicero"></a>
+          <p>© 2025 | Desenvolvido por </p>
+          <div><img src="./src/images/logo_robsonsvicero.png" alt="Logo Robson Svicero"></div>
 
         </div>
 
@@ -357,8 +375,19 @@
     </div>
   </footer>
 
-  <script src="./src/js/index.js"></script>
+  <!-- Link SwiperJS script-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script defer src="./src/js/index.js"></script>
+  <script src="./src/js/header.js"></script>
+  <script src="./src/js/app.js"></script>
   <script src="./src/js/form.js"></script>
+
+
+  <!-- Preloader container -->
+  <!-- <div id="loader" class="preloader">
+    <div class="loader"></div>
+  </div> -->
 </body>
 
 </html>
