@@ -74,12 +74,12 @@
 
 /* ===== MENU MOBILE ===== */
 .mobile-menu {
-  /* position: relative; */
+  position: relative;
   display: none;
   flex-direction: column;
   padding: 18px 12px;
   border-radius: 50%;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
   cursor: pointer;
   gap: 5px;
   z-index: 1100; /* Mantém o menu sobre os outros elementos */
