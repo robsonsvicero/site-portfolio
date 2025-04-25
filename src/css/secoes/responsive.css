@@ -89,6 +89,7 @@
   .works .interface .card-work .content {
     width: 100%;
     padding-inline: 15px;
+    margin-top: 32px;
   }
 
   .container {
