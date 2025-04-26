@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.querySelector(".mobile-menu");
   const navList = document.querySelector(".nav-list");
   const navLinks = document.querySelectorAll(".nav-list a");
+  const logo = document.querySelector(".logo");
 
   // Função para abrir/fechar menu mobile
   function toggleMenu() {
@@ -19,8 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Adiciona fundo ao header no scroll
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
+      logo.src = "src/images/logo/símbolo_azul.png"
       header.classList.add("scrolled");
     } else {
+      logo.src = "src/images/logo/símbolo_branco.png";
       header.classList.remove("scrolled");
     }
   });

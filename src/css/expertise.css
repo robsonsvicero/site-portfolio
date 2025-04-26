@@ -1,16 +1,17 @@
 .card-wrapper {
-    margin: 0 60px 35px;
+    margin: 0 40px 35px;
     padding: 20px 10px;
     overflow: hidden;
   }
 
   .card-list {
+    height: 380px;
     order: initial;
   }
   
   .card-list .card-item .card-link {
     user-select: none;
-    min-height: 400px;
+    height: 100%;
     display: block;
     background-color: #1a1a1a;
     padding: 18px;

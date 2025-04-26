@@ -19,8 +19,8 @@
 }
 
 .interface .card-work {
-	width: 75%;
-	min-height: 400px;
+	width: 100%;
+	height: 400px;
 	display: flex;
 	justify-content: space-between ;
 	align-items: center;
@@ -31,8 +31,12 @@
 	padding: 16px;
 }
 
-.interface .card-work .img img{
-	width: 100%;
+.interface .card-work .img {
+	width: 50%;
+}
+
+.interface .card-work .img img {
+	height: 100%;
 	border-radius: 10px;
 }
 
@@ -43,29 +47,37 @@
 }
 
 .interface .card-work .content h2 {
+	font-family: var(--fonte-titulo);
 	font-size: var(--fonte-g);
 	margin-bottom: 36px;
 }
 
 .interface .card-work .content .text {
-	font-size: 15px;
-	color: #ffffff6c;
+	font-size: 1.6rem;
+	color: #ffffff86;
 	margin-bottom: 28px;
 }
 
 .interface .card-work .content .buttons {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	gap: 16px;
 }
 
-.interface .card-work .content #meu-link {
-	font-size: 14px;
-	color: #ffffff6c;
-	border: 1px solid #ffffff6c;
+.interface .card-work .content .btn-card {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ffffff86;
 	border-radius: 4px;
-	padding: 8px;
-	margin-right: 12px;
+	padding: 1rem;
 	cursor: pointer;
+}
+
+.interface .card-work .content .btn-card a {
+	font-size: 1.6rem;
+	color: #ffffff86;
 }
 
 .interface .card-work .content #meu-link:hover {

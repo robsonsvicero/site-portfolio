@@ -3,11 +3,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #fafafa;
 	font-family: var(--fonte-texto);
 }
 
-.forms .container {
+.form-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -15,11 +14,13 @@
 }
 
 .chamada {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-bottom: 32px;
 }
 
 .chamada h2 {
-	color: var(--cor-fundo-escuro);
 	text-align: center;
 	font-family: var(--fonte-titulo);
 	font-size: 2.4rem;
@@ -28,19 +29,25 @@
 }
 
 .chamada p {
+	width: 60%;
 	font-size: 1.6rem;
 	text-align: center;
-	color: #555b69;
+	color: #ffffff88;
 }
 
 form {
-	width: 50%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 form p {
+	width: 100%;
 	font-size: 1.4rem;
 	font-weight: 600;
 	margin-bottom: 40px;
+	color: coral;
 }
 
 label,
@@ -63,7 +70,7 @@ input,
 textarea {
 	margin-bottom: 1rem;
 	color: var(--cor-branca);
-	background: #32364431;
+	background: #1a1a1a;
 	border: 0.125rem solid transparent;
 	border-radius: 1.125rem;
 	transition: border-color 0.3s,
@@ -80,8 +87,9 @@ textarea:focus {
 }
 
 label {
+	width: 100%;
 	margin-bottom: 0.5rem;
-	color: #84868f;
+	color: #ffffff;
 }
 
 textarea {
@@ -90,11 +98,13 @@ textarea {
 }
 
 button {
+	width: 75%;
 	padding: 24px 60px;
-	font-size: var(--fonte-normal);
-	font-weight: 400;
+  font-size: 1.8rem;
+	font-weight: 600;
 	letter-spacing: 1px;
-	background-color: var(--cor-primaria);
+	background-color: transparent;
+	border: 2px solid var(--cor-primaria);
 	color: var(--cor-branca);
 	border-radius: 99px;
 	cursor: pointer;
@@ -104,9 +114,8 @@ button {
 button:hover,
 button:focus {
 	outline: none;
-	background-color: transparent;
-	border: 2px solid var(--cor-primaria);
-	color: var(--cor-primaria);
+	background-color: var(--cor-primaria);
+	color: var(--cor-branca);
 }
 
 button:disabled {

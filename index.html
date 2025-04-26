@@ -39,14 +39,14 @@
   <link rel="stylesheet" href="./src/css/loader.css">
   <link rel="stylesheet" href="./src/css/variables.css">
   <link rel="stylesheet" href="./src/css/global.css">
-  <link rel="stylesheet" href="./src/css/secoes/responsive.css">
-  <link rel="stylesheet" href="./src/css/secoes/header.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="stylesheet" href="./src/css/header.css">
   <link rel="stylesheet" href="./src/css/banner.css">
-  <link rel="stylesheet" href="./src/css/secoes/about.css">
-  <link rel="stylesheet" href="./src/css/secoes/expertise.css">
-  <link rel="stylesheet" href="./src/css/secoes/work.css">
-  <link rel="stylesheet" href="./src/css/secoes/contact.css">
-  <link rel="stylesheet" href="./src/css/secoes/footer.css">
+  <link rel="stylesheet" href="./src/css/about.css">
+  <link rel="stylesheet" href="./src/css/expertise.css">
+  <link rel="stylesheet" href="./src/css/work.css">
+  <link rel="stylesheet" href="./src/css/contact.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
 
   <title>Robson Svicero</title>
 </head>
@@ -55,12 +55,12 @@
   <a href="https://wa.me/5511946932007" target="_blank" class="whatsapp-button" style="display: none;">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
-  <header class="header" id="inicio">
+  <header class="header">
     <div class="container header-container">
       <div class="header-content row justify-content-between align-items-center">
 
         <div class="logo-container">
-          <img src="./src/images/logo/símbolo_azul.png" alt="Logo Robson Svicero" class="logo logo-blue">
+          <img src="src/images/logo/símbolo_branco.png" alt="Logo Robson Svicero" class="logo logo-blue">
         </div>
 
         <!-- Menu de navegação -->
@@ -85,7 +85,7 @@
 
   </header>
 
-  <section class="letter-banner">
+  <section class="letter-banner" id="inicio">
     <div class="banner">
       <div class="description">
         <h1 class="title-banner">Olá! Eu sou o <strong id="texto">Robson</strong>.</h1>
@@ -179,12 +179,15 @@
             <div class="content">
               <h2>Projeto Dragon Ball (case)</h2>
               <p class="text">Projeto desenvolvido durante a "Semana do 0 ao Programador" da DevQuest onde foram
-                passados conceitos basicos de HTML, CSS e JavaScript. Neste projeto, ao clicar em um botão, a imagem de fundo e os detalhes do personagem são atualizados dinamicamente na página.</p>
+                passados conceitos basicos de HTML, CSS e JavaScript. Neste projeto, ao clicar em um botão, a imagem de
+                fundo e os detalhes do personagem são atualizados dinamicamente na página.</p>
               <div class="buttons">
-                <a id="meu-link" href="https://robsonsvicero.github.io/projeto-dragon-ball/" rel=”noopener noreferer”
-                  target="_blank">
-                  <p>Visite o site</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://robsonsvicero.github.io/projeto-dragon-ball/" rel="noopener noreferer"
+                    target="_blank">
+                    <p>Visite o site</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -198,14 +201,18 @@
               <p class="text">Projeto de identidade visual e site institucional para uma empresa que trabalha com
                 IoT (Internet of Things) para empresas do ramo de Energia Elétrica.</p>
               <div class="buttons">
-                <a id="meu-link" href="https://powerbrainbr.com" rel=”noopener noreferer” target="_blank">
-                  <p>Visite o site</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://powerbrainbr.com" rel="noopener noreferer" target="_blank">
+                    <p>Visite o site</p>
+                  </a>
+                </div>
 
-                <a id="meu-link" href="https://www.behance.net/gallery/221467317/PowerBrain" rel=”noopener noreferer”
-                  target="_blank">
-                  <p>Visite o projeto de IDV</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://www.behance.net/gallery/221467317/PowerBrain" rel="noopener noreferer"
+                    target="_blank">
+                    <p>Visite o projeto de IDV</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -221,14 +228,19 @@
                 sacada, guarda-corpo, box e
                 espelhos</p>
               <div class="buttons">
-                <a id="meu-link" href="https://sacadaclassz.com.br/" rel=”noopener noreferer” target="_blank">
-                  <p>Visite o site</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://sacadaclassz.com.br/" rel="noopener noreferer" target="_blank">
+                    <p>Visite o site</p>
+                  </a>
+                </div>
 
-                <a id="meu-link" href="https://www.behance.net/gallery/211657157/Sacada-Classz" rel=”noopener noreferer”
-                  target="_blank">
-                  <p>Visite o projeto de IDV</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://www.behance.net/gallery/211657157/Sacada-Classz"
+                    rel="noopener noreferer" target="_blank">
+                    <p>Visite o projeto de IDV</p>
+                  </a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -241,11 +253,12 @@
               <h2>Isaque Móveis</h2>
               <p class="text">Projeto de criação da Identidade visual para uma loja de móveis.</p>
               <div class="buttons">
-
-                <a id="meu-link" href="https://www.behance.net/gallery/188436653/Isaque-Moveis" rel=”noopener noreferer”
-                  target="_blank">
-                  <p>Visite o projeto de IDV</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://www.behance.net/gallery/188436653/Isaque-Moveis"
+                    rel="noopener noreferer" target="_blank">
+                    <p>Visite o projeto de IDV</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -258,11 +271,12 @@
               <h2>Universal Music</h2>
               <p class="text">Projeto de UX design para modernização do layout do site da Universal Music Store.</p>
               <div class="buttons">
-
-                <a id="meu-link" href="https://www.behance.net/gallery/174232557/Universal-Music" rel=”noopener
-                  noreferer” target="_blank">
-                  <p>Visite o projeto de UX</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://www.behance.net/gallery/174232557/Universal-Music" rel=”noopener
+                    noreferer” target="_blank">
+                    <p>Visite o projeto de UX</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -274,12 +288,15 @@
             <div class="content">
               <h2>Pokedeck (case)</h2>
               <p class="text">Projeto desenvolvido durante a "Semana do 0 ao Programador" da DevQuest onde foram
-                passados conceitos basicos de HTML, CSS e JavaScript. Ao selecionar um "pokedev" no menu lateral, a interface exibe um card com os dados correspondentes ao personagem escolhido.</p>
+                passados conceitos basicos de HTML, CSS e JavaScript. Ao selecionar um "pokedev" no menu lateral, a
+                interface exibe um card com os dados correspondentes ao personagem escolhido.</p>
               <div class="buttons">
-                <a id="meu-link" href="https://robsonsvicero.github.io/projeto-pokedevs/" rel=”noopener noreferer”
-                  target="_blank">
-                  <p>Visite o site</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://robsonsvicero.github.io/projeto-pokedevs/" rel="noopener noreferer"
+                    target="_blank">
+                    <p>Visite o site</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -294,10 +311,12 @@
                 grid e
                 flexbox.</p>
               <div class="buttons">
-                <a id="meu-link" href="https://robsonsvicero.github.io/landing-page-com-grid-agencia-xyz/" rel=”noopener
-                  noreferer” target="_blank">
-                  <p>Visite o site</p>
-                </a>
+                <div class="btn-card">
+                  <a id="meu-link" href="https://robsonsvicero.github.io/landing-page-com-grid-agencia-xyz/"
+                    rel=”noopener noreferer” target="_blank">
+                    <p>Visite o site</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -343,17 +362,17 @@
         </div>
       </div>
       <div class="buttons row">
-        <a href="/src/docs/Roberto Robson Svicero - Frontend.pdf" class="button" rel=”noopener noreferer”
+        <a href="/src/docs/Roberto Robson Svicero - Frontend.pdf" class="button" rel="noopener noreferer"
           target="_blank"><i class="fa-regular fa-file-pdf"></i><span>Dê uma olhada no meu CV</span></a>
       </div>
     </div>
   </section>
 
   <section class="forms section" id="contact">
-    <div class="container">
+    <div class="container form-container">
       <div class="chamada">
         <h2 class="titulo-chamada">FICOU COM DÚVIDA? MANDE UMA MENSAGEM!</h2>
-        <p class="texto-chamada">Caso tenha ficado com qualquer dúvida basta mandar uma <br>mensagem que
+        <p class="texto-chamada">Caso tenha ficado com qualquer dúvida basta mandar uma mensagem que
           entrarei em contato o mais breve possível.
         </p>
       </div>
@@ -381,26 +400,26 @@
 
   </section>
 
-  <footer class="footer letter-banner section">
-    <div class="container social-container banner">
+  <footer class="footer">
+    <div class="container social-container">
       <div class="social">
         <nav>
           <ul>
-            <li><a href="https://wa.me/5511946932007" rel=”noopener noreferer” target="_blank"><i
+            <li><a href="https://wa.me/5511946932007" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href="https://www.instagram.com/robsons.designer/" rel=”noopener noreferer” target="_blank"><i
+            <li><a href="https://www.instagram.com/robsons.designer/" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/robsonsvicero/" rel=”noopener noreferer” target="_blank"><i
+            <li><a href="https://www.linkedin.com/in/robsonsvicero/" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/robsonsvicero" rel=”noopener noreferer” target="_blank"><i
+            <li><a href="https://github.com/robsonsvicero" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-github-alt"></i></a></li>
-            <li><a href="https://www.behance.net/robsonsvicero" rel=”noopener noreferer” target="_blank"><i
+            <li><a href="https://www.behance.net/robsonsvicero" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-behance"></i></a></li>
           </ul>
         </nav>
 
         <div class="buttons btn-social row">
-          <a href="#inicio" class="button btn-btn-social"><i class="fa-brands fa-space-awesome" rel=”noopener noreferer”
+          <a href="#inicio" class="button"><i class="fa-brands fa-space-awesome" rel="noopener noreferer"
               target="_blank"></i><span>Voltar ao
               topo</span></a>
 

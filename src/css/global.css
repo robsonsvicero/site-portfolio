@@ -49,7 +49,6 @@ body {
 
 .container {
   min-width: 100%;
-  padding: 100px 56px 50px;
 }
 
 .row {
@@ -65,8 +64,8 @@ body {
   align-items: center;
 }
 
-.section {
-  padding: 0;
+.section {  
+  padding: 10rem 24rem;
 }
 
 .section-title {

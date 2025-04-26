@@ -1,24 +1,13 @@
 .header {
+  position: fixed;
+  font-family: var(--fonte-titulo);
+  font-weight: 500;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 40px 10%;
-  background-color: var(--cor-branca);  
+  padding: 2rem 24rem;
   z-index: 10;
-}
-
-/* Container para sobrepor as imagens */
-.logo-container {
-  position: relative;
-  width: fit-content;
-}
-
-/* Ambas as imagens devem ocupar o mesmo espaço */
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.5s;
 }
 
 /* Container */
@@ -37,13 +26,20 @@
   align-items: center;
 }
 
-.header-content .logo-container {
+/* Container para sobrepor as imagens */
+.logo-container {
+  position: relative;
   width: 80px;
   height: 65px;
 }
 
-.header-content .logo-container img {
+/* Ambas as imagens devem ocupar o mesmo espaço */
+.logo {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* ===== MENU DESKTOP ===== */
@@ -59,7 +55,7 @@
 
 .nav-list a {
   text-decoration: none;
-  color: var(--cor-primaria);
+  color: var(--cor-branca);
   font-size: 20px;
   transition: 0.3s;
 }
@@ -79,7 +75,7 @@
   flex-direction: column;
   padding: 18px 12px;
   border-radius: 50%;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-branca);
   cursor: pointer;
   gap: 5px;
   z-index: 1100; /* Mantém o menu sobre os outros elementos */
@@ -89,7 +85,7 @@
   display: block;
   width: 32px;
   height: 3px;
-  background: white;
+  background: var(--cor-primaria);
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -105,4 +101,25 @@
 }
 .header-content .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-6px, -5px);
+}
+
+header.scrolled {
+  background-color: var(--cor-branca);
+  color: var(--cor-primaria);
+}
+
+header.scrolled .mobile-menu {
+  background-color: var(--cor-primaria);
+}
+
+header.scrolled .mobile-menu span {
+  background-color: var(--cor-branca);
+}
+
+header.scrolled .nav-list a {
+  color: var(--cor-primaria);
+}
+
+header.scrolled .nav-list a:hover {
+  color: var(--cor-branca);
 }
