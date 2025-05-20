@@ -116,6 +116,14 @@ header.scrolled .mobile-menu span {
   background-color: var(--cor-branca);
 }
 
+header.scrolled .mobile-menu.active {
+  background-color: var(--cor-branca);
+}
+
+header.scrolled .mobile-menu.mobile-menu.active span {
+  background-color: var(--cor-primaria);
+}
+
 header.scrolled .nav-list a {
   color: var(--cor-primaria);
 }

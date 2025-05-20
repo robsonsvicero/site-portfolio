@@ -11,12 +11,14 @@
   }
     
   :root {
-    --fonte-texto: 'Roboto', sans-serif;
-    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-texto: 'Raleway', sans-serif;
+    --fonte-titulo: 'Urbanist', sans-serif;
     --fonte-exg: 5.6rem;
     --fonte-xg: 4.4rem;
     --fonte-g: 2.4rem;
     --fonte-m: 1.6rem;
+    --espaco-letras: 0.06rem;
+    --altura-linha: 1.6;
   }
   
   :root {

@@ -75,14 +75,14 @@
     border-bottom: 2px solid #ffffff50;
   }
 
-  ul.nav-list a {
-    color: var(--cor-branca);
+  header.scrolled .nav-list a {
+    color: var(--cor-branca) !important;
     transition: 0.4s;
   }
   
-  ul.nav-list a:hover {
+  /* ul.nav-list a:hover {
     background-color: transparent;
-  }
+  } */
 
   /* Classe para exibir o menu */
   .nav-list.active {
@@ -110,7 +110,7 @@
   .cards-works .interface .card-work {
     display: flex;
     flex-direction: column;
-    height: 614px;
+    height: 680px;
     width: 100%;
     justify-content: center;
   }
@@ -157,6 +157,14 @@
   .interface .card-work .content .buttons {
     flex-direction: column;
     gap: 24px;
+  }
+
+  .card-wrapper .card-list {
+    height: 520px;
+  }
+
+  .card-wrapper .card-list .card-item .card-link  {
+    height: 100%;
   }
 
   .card-wrapper .swiper-slide-button {
@@ -232,6 +240,11 @@
   .container .chamada p {
     width: 95%;
   }
+
+  section.about .about-img {
+    width: 60%;
+  }
+
   footer.footer {
     padding: 6rem 1.5rem 1rem;
   }

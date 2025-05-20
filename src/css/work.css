@@ -33,6 +33,8 @@
 
 .interface .card-work .img {
 	width: 50%;
+	display: flex;
+	justify-content: center;
 }
 
 .interface .card-work .img img {

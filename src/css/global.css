@@ -1,12 +1,10 @@
 html, body {
   max-width: 100%;
-  /* overflow-x: hidden; */
 }
 
 html {
   font-size: 62.5%;
   font-weight: 400;
-  /* scroll-behavior: smooth; */
 }
 
 main {
@@ -17,6 +15,8 @@ body {
   font-family: var(--fonte-texto);
   font-size: var(--fonte-m);
   font-weight: 400;
+  line-height: var(--altura-linha);
+  letter-spacing: var(--espaco-letras);
   color: var(--cor-branca);
   background-color: #050505;
 }
