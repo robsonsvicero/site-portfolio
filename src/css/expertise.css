@@ -56,6 +56,11 @@
     color: #205C20;
     background-color: #D6F8D6;
   }
+
+  .card-list .card-link .badge.maintenance {
+    color: #441774;
+    background-color: #DEC6F8;
+  }
   
   .card-list .card-link .card-title {
     font-size: 1.6rem;
