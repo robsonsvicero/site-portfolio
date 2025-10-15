@@ -1,7 +1,6 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
@@ -103,6 +102,7 @@
   color: var(--cor-primaria);
   margin-bottom: 3.2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .service-description ul,
@@ -123,7 +123,7 @@
 
 .process {
   width: 50%;
-  margin-top: 40rem;
+  padding-top: 40rem;
 }
 
 /* ===== GALERIA ===== */
@@ -169,13 +169,18 @@
   background-color: #FFF8F0;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10rem 24rem;
 }
 
 .cta-servico h2 {
+  width: 70%;
+  align-items: center;
   font-family: var(--fonte-titulo);
   font-size: 4.8rem;
   font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 20px;
 }
 
 .cta-servico p {
@@ -195,14 +200,17 @@
   width: 70%;
   height: 380px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  /* background-image: url("/src/images/cta-banner.webp"); */
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
 }
 
 .img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 30%;
 }
 

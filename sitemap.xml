@@ -9,12 +9,32 @@
 
 <url>
   <loc>https://robsonsvicero.com.br/</loc>
-  <lastmod>2025-02-13T00:39:37+00:00</lastmod>
+  <lastmod>2025-10-15T20:27:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://robsonsvicero.com.br/index.html</loc>
+  <lastmod>2025-10-15T20:27:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robsonsvicero.com.br/servico-identidade-visual.html</loc>
+  <lastmod>2025-10-15T20:27:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robsonsvicero.com.br/servico-ui-design.html</loc>
+  <lastmod>2025-10-15T20:27:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robsonsvicero.com.br/servico-front-end.html</loc>
+  <lastmod>2025-10-15T20:27:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://robsonsvicero.com.br/src/docs/Roberto%20Robson%20Svicero%20-%20Frontend.pdf</loc>
-  <lastmod>2025-02-13T00:40:35+00:00</lastmod>
+  <lastmod>2025-10-15T16:28:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
