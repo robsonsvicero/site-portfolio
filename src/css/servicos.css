@@ -1,0 +1,216 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+/* ===== HERO ===== */
+.hero-servico {
+  color: var(--cor-branca);
+  height: 780px;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero {
+  height: 100%;
+  background-image: url("/src/images/Banner_idv.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 0.1s;
+}
+
+.ui-hero{
+   background-image: url("/src/images/uidesign.webp");
+}
+
+.dev-hero{
+   background-image: url("/src/images/frontend.webp");
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-description h1 {
+  display: inline-block;
+  font-family: var(--fonte-titulo);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 6.4rem;
+  letter-spacing: .16rem;
+  position: relative;
+  color: var(--cor-branca);
+  margin-bottom: 24px;
+}
+
+.hero-description p {
+  font-family: var(--fonte-titulo);
+  font-size: var(--fonte-g);
+  line-height: 2.8rem;
+  font-weight: 400;
+  letter-spacing: .16rem;
+  color: var(--cor-branca);
+}
+
+.description-button {
+  position: relative;
+  margin-top: 40px;
+}
+
+.btn-description {
+  padding: 12px 40px;
+  border-radius: 100px;
+  font-size: var(--fonte-normal);
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branca);
+  margin-top: 32px;
+  transition: 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-description:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+
+/* ===== DESCRIÇÃO ===== */
+
+.service-description {
+  padding: 10rem 24rem;
+}
+
+.service-description h2 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  color: var(--cor-primaria);
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+
+.service-description ul,
+.service-description ol {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.service-description li {
+  color: #F2F2F2;
+  font-size: var(--fonte-g);
+  margin-bottom: 0.5rem;
+}
+
+.included {
+  width: 50%;
+}
+
+.process {
+  width: 50%;
+  margin-top: 40rem;
+}
+
+/* ===== GALERIA ===== */
+.gallery-container {
+  flex-direction: column;
+}
+.gallery {
+  background-color: #FFF8F0;
+  padding: 10rem 24rem;
+}
+
+.gallery h2 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+  margin-bottom: 3.2rem;
+}
+
+.grid-galeria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.grid-galeria img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== CTA SERVIÇOS ===== */
+
+.cta-servico {
+  background-color: #FFF8F0;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 24rem;
+}
+
+.cta-servico h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 4.8rem;
+  font-weight: 300;
+}
+
+.cta-servico p {
+  font-family: var(--fonte-normal);
+  font-size: var(--fonte-m);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.cta-container{
+  border-radius: 24px;
+  padding: 2.4rem 4.8rem;
+  background-image: var(--degrade-fundo);
+}
+
+.front-content{
+  width: 70%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  /* background-image: url("/src/images/cta-banner.webp"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.img-content {
+  width: 30%;
+}
+
+/* ===== FOOTER ===== */
+.footer:var(--font) {
+  background-color: var(--cor-secundaria);
+  color: var(--branco);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}

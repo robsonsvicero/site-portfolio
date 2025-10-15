@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
   display: block;
-  z-index: -1;
+  z-index: 0;
   background-image: url("/src/images/hero.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -30,6 +30,7 @@
   height: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .title-banner {
@@ -41,7 +42,6 @@
   letter-spacing: .16rem;
   position: relative;
   color: var(--cor-branca);
-  z-index: 1;
 }
 
 .title-banner #texto {
@@ -52,17 +52,45 @@
   font-family: var(--fonte-titulo);
   font-size: var(--fonte-g);
   line-height: 2.8rem;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 4px;
   margin-top: 32px;
+  color: #5FB2D8;
 }
 
 .banner-description strong {
   color: #5FB2D8;
 }
 
+.banner-button {
+  position: relative;
+  margin-top: 40px;
+}
+
+.btn-banner{
+  padding: 12px 40px;
+  border-radius: 100px;
+  font-size: var(--fonte-normal);
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 2px solid var(--cor-secundaria);
+  color: var(--cor-branca);
+  margin-top: 32px;
+  transition: 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-banner:hover {
+  transform: scale(1.1);
+  background-color: var(--cor-secundaria);
+  transition: all 0.4s ease-in-out;
+}
+
 .letter-banner .next-section {
   position: absolute;
-  bottom: 25%;
+  bottom: 15%;
   width: 100%;
   z-index: 1;
 }

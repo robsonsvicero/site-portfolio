@@ -42,7 +42,29 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+.btn-header {
+  padding: 12px 40px;
+  border-radius: 100px;
+  font-size: var(--fonte-normal);
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: var(--cor-secundaria);
+  transition: 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-header span{
+  color: var(--cor-branca);
+}
+
+.btn-header:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+
 /* ===== MENU DESKTOP ===== */
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -63,8 +85,8 @@
 .nav-list a:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-branca);
-  padding: 12px;
-  border-radius: 8px;
+  padding: 10px 24px;
+  border-radius: 100px;
   transition: all 0.4s ease-in-out;
 }
 

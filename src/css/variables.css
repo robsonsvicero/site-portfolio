@@ -7,7 +7,7 @@
     --cor-fundo-escuro: #050505;    
     --cinza-escuro: #282828;
     --cor-fundo-cinza-claro: #c1c1c1;    
-    --degrade-fundo: linear-gradient(180deg, rgba(2,1,19,1) 0%, rgba(86,19,41,1) 70%);
+    --degrade-fundo: linear-gradient(to right, #094C7E, #094C7E0a );
   }
     
   :root {

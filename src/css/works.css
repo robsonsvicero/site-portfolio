@@ -5,7 +5,7 @@
   }
 
   .card-list {
-    height: 452px;
+    height: 520px;
     order: initial;
   }
   
@@ -32,10 +32,10 @@
   }
   
   .card-list .card-link .badge {
-    font-size: 15px;
+    font-size: 1.4rem;
     font-weight: 500;
     color: var(--cor-primaria);
-    padding: 8px 16px;
+    padding: 6px 12px;
     margin: 16px 0 18px;
     background-color: #DDE4FF;
     width: fit-content;
@@ -57,9 +57,12 @@
     background-color: #D6F8D6;
   }
 
-  .card-list .card-link .badge.maintenance {
-    color: #441774;
-    background-color: #DEC6F8;
+  .card-list .card-link .badge.cta {
+    color: #c1c1c1;
+    padding: 0 0 4px;
+    border-radius: 0;
+    border-bottom: 2px solid #c1c1c1;
+    background-color: transparent;
   }
   
   .card-list .card-link .card-title {

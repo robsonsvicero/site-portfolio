@@ -1,0 +1,85 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	background-size: cover;
+	padding: 10rem 24rem 1rem;
+}
+
+.social-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.social nav {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+}
+
+.social nav ul {
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.social ul li a i {
+	color: var(--cor-primaria);
+	font-size: 3.2rem;
+}
+
+.social ul li a i:hover {
+	color: var(--cor-branca);
+	padding: 12px;
+	transform: scale(1.3) rotate(-8deg);
+}
+
+.social .rp-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 32px;
+	font-size: 1.3rem;
+	font-weight: 400;
+	padding: 8px;
+}
+
+.social .rp-footer img {
+	width: 100%;
+}
+
+.footer .btn-social {
+	text-align: center;
+}
+
+.footer .btn-social a {
+	color: var(--cor-branca);
+	margin: 80px 0;
+	background-position: center bottom;
+}
+
+.footer .btn-social,
+.footer .made {
+	text-align: center;
+}
+
+a.button {
+	color: var(--cor-primaria);
+}
+
+
+
+.button:hover {
+  color: var(--cor-branca);
+}

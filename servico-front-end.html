@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título principal -->
+  <title>Desenvolvimento Front-End | Robson Svicero</title>
+
+  <!-- Descrição -->
+  <meta name="description" content="UI Design profissional: interfaces modernas, intuitivas e com foco em conversão.">
+
+  <!-- Palavras-chave (relevantes e naturais) -->
+  <meta name="keywords"
+    content="ui design, design de interface, design system, ux design, experiência do usuário, wireframe, usabilidade, robson svicero">
+
+  <!-- Autor -->
+  <meta name="author" content="Robson Svicero">
+
+  <!-- URL canônica para evitar conteúdo duplicado -->
+  <link rel="canonical" href="https://robsonsvicero.com.br">
+
+  <!-- Compatibilidade com navegadores -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ===========================
+  🔹 FAVICON
+  ============================ -->
+  <link rel="icon" type="image/png" href="./src/images/favicon-32x32.png">
+
+  <!-- ===========================
+  🔹 OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+  ============================ -->
+  <meta property="og:title" content="Desenvolvimento Front-End | Robson Svicero">
+  <meta property="og:description"
+    content="Crio interfaces digitais funcionais, modernas e alinhadas à identidade da sua marca.">
+  <meta property="og:image" content="https://robsonsvicero.com.br/src/images/thumb_dev.webp">
+  <meta property="og:url" content="https://robsonsvicero.com.br/servico-front-end.html">
+
+  <!-- ===========================
+  🔹 TWITTER CARD
+  ============================ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Programação — Robson Svicero">
+  <meta name="twitter:description"
+    content="Crio interfaces digitais funcionais, modernas e alinhadas à identidade da sua marca.">
+  <meta name="twitter:image" content="https://robsonsvicero.com.br/src/images/thumb_dev.webp">
+
+  <!-- ===========================
+  🔹 PREFETCH / PERFORMANCE
+  ============================ -->
+  <!-- Pré-carrega a fonte principal para evitar layout shift -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    as="font" crossorigin>
+
+  <!-- ===========================
+  🔹 SCHEMA.ORG (dados estruturados)
+  ============================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robson Svicero",
+    "url": "https://robsonsvicero.com.br",
+    "image": "https://robsonsvicero.com.br/imagens/robsonsvicero.jpg",
+    "jobTitle": "Designer UI/UX e Desenvolvedor Front-End",
+    "description": "Designer especializado em UI/UX e desenvolvimento front-end. Crio interfaces modernas, acessíveis e visualmente marcantes.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressCountry": "Brasil"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/robsonsvicero",
+      "https://github.com/robsonsvicero",
+      "https://www.behance.net/robsonsvicero"
+    ]
+  }
+  </script>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/src/css/servicos.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/global.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/footer-pages.css">
+
+
+</head>
+
+<body>
+  <a href="https://wa.me/5511964932007" target="_blank" class="whatsapp-button" style="display: none;">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-content row justify-content-between align-items-center">
+
+        <div class="logo-container">
+          <img src="src/images/logo/símbolo_branco.png" alt="Logo Robson Svicero" class="logo logo-blue">
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+          <div class="mobile-menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+
+          <ul class="nav-list">
+            <li><a href="index.html" onclick="closeMenu()">Início</a></li>
+            <li><a href="index.html#works" onclick="closeMenu()">Portfólio</a></li>
+            <li><a href="index.html#expertises" onclick="closeMenu()">Serviços</a></li>
+            <li><a href="index.html#about" onclick="closeMenu()">Sobre</a></li>
+            <li><a href="index.html#contact" onclick="closeMenu()">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="buttons row">
+          <a href="https://wa.me/5511964932007" class="btn-header" rel="noopener noreferer"
+            target="_blank"><span>Solicitar Orçamento</span></a>
+
+        </div>
+      </div>
+
+  </header>
+
+  <section class="hero-servico " id="inicio">
+    <div class="hero dev-hero">
+      <div class="hero-description">
+        <h1>Desenvolvimento Front-End</h1>
+        <p>
+          Desenvolvimento de sites modernos, rápidos e otimizados para fortalecer sua presença digital.
+        </p>
+        <div class="description-button row">
+          <a href="https://wa.me/5511964932007" class="btn-description" rel="noopener noreferer"
+            target="_blank"><span>Fale
+              comigo</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-description">
+    <div class="container">
+      <div class="included">
+        <h2>O que inclui</h2>
+        <ul>
+          <li>Desenvolvimento front-end (HTML, CSS, JavaScript)</li>
+          <li>Estrutura semântica e código limpo</li>
+          <li>Estilo moderno com foco em tipografia, hierarquia visual e performance</li>
+          <li>Estrutura otimizada e leve para carregamento rápido e excelente usabilidade</li>
+        </ul>
+      </div>
+
+      <div class="process">
+        <h2>Processo de criação</h2>
+        <ol>
+          <li><strong>Alinhamento de objetivos:</strong> compreensão do propósito do site, público-alvo e necessidades
+            funcionais.</li>
+          <li><strong>Planejamento e prototipagem:</strong> definição da estrutura das páginas e navegação com base no
+            design existente ou em um wireframe.</li>
+          <li><strong>Desenvolvimento:</strong> conforme necessidade, construção do site em WordPress ou HTML, CSS e
+            JavaScript, com possibilidade de integração React conforme necessidade.</li>
+          <li><strong>Testes e ajustes:</strong> verificação de performance, compatibilidade e segurança.</li>
+          <li><strong>Entrega e suporte:</strong> entrega do projeto otimizado e suporte inicial para ajustes e
+            orientações de uso.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container gallery-container">
+      <h2>Projetos relacionados</h2>
+      <div class="grid-galeria">
+        <a href="https://powerbrainbr.com/" target="_blank">
+          <img src="/src/images/power-brain.webp" alt="Site PowerBrain">
+        </a>
+        <a href="https://www.sacadaclassz.com.br/" target="_blank">
+          <img src="/src/images/classz.webp" alt="Site Sacada Classz">
+        </a>
+        <a href="https://isaquemoveis.com.br/" target="_blank">
+          <img src="/src/images/isaque-moveis.webp" alt="Site Isaque Móveis">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-servico">
+    <div class="container cta-container">
+      <div class="front-content">
+        <h2>Quer transformar seu design<br>em um site funcional?</h2>
+        <p>Entre em contato e descubra como posso te ajudar a dar vida à sua interface.</p>
+        <div class="buttons row">
+          <a href="https://wa.me/5511964932007" class="btn-header" rel="noopener noreferer"
+            target="_blank"><span>Solicitar Orçamento</span></a>
+        </div>
+      </div>
+      <div class="img-content">
+        <img src="/src/images/cta-dev.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer footer-dev">
+    <div class="container social-container">
+      <div class="social">
+        <nav>
+          <ul>
+            <li><a href="https://wa.me/5511964932007" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/robsonsvicero.dsgr/" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/robsonsvicero/" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/robsonsvicero" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-github-alt"></i></a></li>
+            <li><a href="https://www.behance.net/robsonsvicero" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-behance"></i></a></li>
+          </ul>
+        </nav>
+
+        <div class="buttons btn-social row">
+          <a href="#inicio" class="button"><i class="fa-brands fa-space-awesome" rel="noopener noreferer"
+              target="_blank"></i><span>Voltar ao
+              topo</span></a>
+
+        </div>
+
+        <div class="rp-footer">
+          <p>© 2025 | Desenvolvido por </p>
+          <div><img src="./src/images/logo_robsonsvicero.png" alt="Logo Robson Svicero"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script defer src="./src/js/index.js"></script>
+  <script src="./src/js/header.js"></script>
+
+</body>
+
+</html>

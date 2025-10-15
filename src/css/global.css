@@ -139,7 +139,3 @@ body {
   height: 1000px;
   transition: width 0.8s, height 0.8s;  
 }
-
-.button:hover {
-  color: var(--cor-branca);
-}

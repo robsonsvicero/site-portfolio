@@ -5,20 +5,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Título principal -->
+  <title>Robson Svicero – Designer UI/UX e Desenvolvedor Front-End</title>
 
-  <meta name="robots" content="follow, index, max-snippet:-1, max-image-preview:large">
-  <meta property="og:image" content="https://robsonsvicero.com.br/image.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:title" content="Robson Svicero">
-  <meta name="description" content="Especialista em Webdesign, identidade visual e UX Design.">
-  <meta property="og:url" content="https://robsonsvicero.com.br/">
-  <meta property="og:type" content="website">
-  <meta name="thumbnail" content="https://robsonsvicero.com.br/image.png">
+  <!-- Descrição -->
+  <meta name="description"
+    content="Criação de experiências digitais modernas e funcionais, unindo design e tecnologia. Especialista em UI/UX e desenvolvimento front-end com foco em interfaces elegantes e intuitivas.">
 
+  <!-- Palavras-chave (relevantes e naturais) -->
+  <meta name="keywords"
+    content="UI design, UX design, desenvolvedor front-end, designer de interface, identidade visual, design de interface, Robson Svicero, São Paulo">
+
+  <!-- Autor -->
+  <meta name="author" content="Robson Svicero">
+
+  <!-- URL canônica para evitar conteúdo duplicado -->
   <link rel="canonical" href="https://robsonsvicero.com.br">
-  <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
+  <!-- Compatibilidade com navegadores -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ===========================
+  🔹 FAVICON
+  ============================ -->
+  <link rel="icon" type="image/png" href="./src/images/favicon-32x32.png">
+
+  <!-- ===========================
+  🔹 OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+  ============================ -->
+  <meta property="og:title" content="Robson Svicero – Designer UI/UX e Desenvolvedor Front-End">
+  <meta property="og:description"
+    content="Especialista em design de interfaces e desenvolvimento front-end. Crio experiências digitais modernas e centradas no usuário.">
+  <meta property="og:image" content="https://robsonsvicero.com.br/src/images/robsonsvicero.webp">
+  <meta property="og:url" content="https://robsonsvicero.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- ===========================
+  🔹 TWITTER CARD
+  ============================ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robson Svicero – Designer UI/UX e Desenvolvedor Front-End">
+  <meta name="twitter:description" content="Crio experiências digitais modernas e funcionais. Veja meu portfólio.">
+  <meta name="twitter:image" content="https://robsonsvicero.com.br/src/images/robsonsvicero.webp">
+
+  <!-- ===========================
+  🔹 PREFETCH / PERFORMANCE
+  ============================ -->
+  <!-- Pré-carrega a fonte principal para evitar layout shift -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    as="font" crossorigin>
+
+  <!-- ===========================
+  🔹 SCHEMA.ORG (dados estruturados)
+  ============================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robson Svicero",
+    "url": "https://robsonsvicero.com.br",
+    "image": "https://robsonsvicero.com.br/imagens/robsonsvicero.jpg",
+    "jobTitle": "Designer UI/UX e Desenvolvedor Front-End",
+    "description": "Designer especializado em UI/UX e desenvolvimento front-end. Crio interfaces modernas, acessíveis e visualmente marcantes.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressCountry": "Brasil"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/robsonsvicero",
+      "https://github.com/robsonsvicero",
+      "https://www.behance.net/robsonsvicero"
+    ]
+  }
+  </script>
 
   <!-- FONTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +89,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <!-- Link para o SwiperJS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -35,18 +99,18 @@
   <link rel="stylesheet" href="./src/fontawesome/css/all.css">
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/loader.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
   <link rel="stylesheet" href="./src/css/variables.css">
   <link rel="stylesheet" href="./src/css/global.css">
-  <link rel="stylesheet" href="./src/css/responsive.css">
   <link rel="stylesheet" href="./src/css/header.css">
   <link rel="stylesheet" href="./src/css/banner.css">
   <link rel="stylesheet" href="./src/css/about.css">
-  <link rel="stylesheet" href="./src/css/expertise.css">
-  <link rel="stylesheet" href="./src/css/work.css">
+  <link rel="stylesheet" href="./src/css/works.css">
+  <link rel="stylesheet" href="./src/css/portfolio.css">
   <link rel="stylesheet" href="./src/css/contact.css">
   <link rel="stylesheet" href="./src/css/footer.css">
 
-  <title>Robson Svicero</title>
+
 </head>
 
 <body>
@@ -71,28 +135,32 @@
 
           <ul class="nav-list">
             <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
+            <li><a href="#works" onclick="closeMenu()">Portfólio</a></li>
             <li><a href="#expertises" onclick="closeMenu()">Serviços</a></li>
-            <li><a href="#works" onclick="closeMenu()">Projetos</a></li>
             <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
           </ul>
         </nav>
+        <div class="buttons row">
+          <a href="https://wa.me/5511964932007" class="btn-header" rel="noopener noreferer"
+            target="_blank"><span>Solicitar Orçamento</span></a>
 
+        </div>
       </div>
-    </div>
 
   </header>
 
   <section class="letter-banner" id="inicio">
     <div class="banner">
       <div class="description">
-        <h1 class="title-banner">Olá! Eu sou o <strong id="texto">Robson</strong>.</h1>
+        <h1 class="title-banner">Design que conecta estratégia<br>e estética.</h1>
         <p class="banner-description">
-          <strong>Programador Front-end</strong><span>, </span>
-          <strong>Webdesigner</strong>
-          <span> & </span>
-          <strong>Designer</strong>
+          Transformo marcas e interfaces em experiências memoráveis
         </p>
+        <div class="banner-button row">
+          <a href="https://wa.me/5511964932007" class="btn-banner" rel="noopener noreferer" target="_blank"><span>Fale
+              comigo</span></a>
+        </div>
       </div>
     </div>
     <div class="next-section">
@@ -115,27 +183,12 @@
 
             <li class="card-item swiper-slide">
               <div class="card-link">
-                <img src="./src/images/maintenance.jpg" alt="Card Manutenção" class="card-image">
-                <p class="badge maintenance">Manutenção de PC</p>
-                <h2 class="card-title">Realizo manutenção em PCs e notebooks. Entre os serviços estão limpeza interna, troca de peças, upgrade, formatação entre outros.</h2>
-              </div>
-            </li>
-            
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img src="./src/images/developer.jpg" alt="Card Programador" class="card-image">
-                <p class="badge developer">Programador</p>
-                <h2 class="card-title">Transformo ideias em sites funcionais com código limpo, performance otimizada e
-                  designs que conectam marcas às pessoas.</h2>
-              </div>
-            </li>
-
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img src="./src/images/webdesigner.png" alt="Card Webdesigner" class="card-image">
-                <p class="badge webdesigner">Webdesigner</p>
-                <h2 class="card-title">Crio interfaces modernas, responsivas e focadas na melhor experiência do usuário.
-                </h2>
+                <img src="./src/images/idv-designer.png" alt="Card Designer" class="card-image">
+                <p class="badge designer">Designer de IDV</p>
+                <h2 class="card-title">Desenvolvo identidades visuais autênticas que traduzem a essência da sua marca.
+                  Do conceito ao design final, crio conexões visuais fortes e memoráveis que destacam seu negócio no
+                  mercado.</h2>
+                  <a href="servico-identidade-visual.html"><p class="badge cta">Saiba mais...</p></a>
               </div>
             </li>
 
@@ -146,16 +199,17 @@
                 <h2 class="card-title">Crio interfaces intuitivas e envolventes, focadas na melhor experiência do
                   usuário. Aliando estética e funcionalidade, entrego designs que encantam visualmente e facilitam a
                   navegação.</h2>
+                  <a href="servico-ui-design.html"><p class="badge cta">Saiba mais...</p></a>
               </div>
             </li>
 
             <li class="card-item swiper-slide">
               <div class="card-link">
-                <img src="./src/images/idv-designer.png" alt="Card Designer" class="card-image">
-                <p class="badge designer">Designer de IDV</p>
-                <h2 class="card-title">Desenvolvo identidades visuais autênticas que traduzem a essência da sua marca.
-                  Do conceito ao design final, crio conexões visuais fortes e memoráveis que destacam seu negócio no
-                  mercado.</h2>
+                <img src="./src/images/developer.jpg" alt="Card Programador" class="card-image">
+                <p class="badge developer">Programador</p>
+                <h2 class="card-title">Transformo ideias em sites funcionais com código limpo, performance otimizada e
+                  designs que conectam marcas às pessoas.</h2>
+                  <a href="servico-front-end.html"><p class="badge cta">Saiba mais...</p></a>
               </div>
             </li>
           </ul>
@@ -181,18 +235,18 @@
 
           <div class="card-work">
             <div class="img">
-              <img src="./src/images/dragon-ball.png" alt="Dragon Ball Devs">
+              <img src="./src/images/Alexandre_Ivo.png" alt="Logo Alexandre Ivo">
             </div>
             <div class="content">
-              <h2>Projeto Dragon Ball (case)</h2>
-              <p class="text">Projeto desenvolvido durante a "Semana do 0 ao Programador" da DevQuest onde foram
-                passados conceitos basicos de HTML, CSS e JavaScript. Neste projeto, ao clicar em um botão, a imagem de
-                fundo e os detalhes do personagem são atualizados dinamicamente na página.</p>
+              <h2>Alexandre Ivo</h2>
+              <p class="text">Criação da identidade visual do professor de música Alexandre Ivo.
+                O projeto reflete sua missão de inspirar pessoas a viverem a música com propósito, unindo harmonia,
+                expressão e autenticidade.</p>
               <div class="buttons">
                 <div class="btn-card">
-                  <a id="meu-link" href="https://robsonsvicero.github.io/projeto-dragon-ball/" rel="noopener noreferer"
-                    target="_blank">
-                    <p>Visite o site</p>
+                  <a id="meu-link" href="https://www.behance.net/gallery/236215677/Alexandre-Ivo-Professor-de-musica"
+                    rel="noopener noreferer" target="_blank">
+                    <p>Visite o projeto de IDV</p>
                   </a>
                 </div>
               </div>
@@ -205,8 +259,9 @@
             </div>
             <div class="content">
               <h2>PowerBrain</h2>
-              <p class="text">Projeto de identidade visual e site institucional para uma empresa que trabalha com
-                IoT (Internet of Things) para empresas do ramo de Energia Elétrica.</p>
+              <p class="text">Desenvolvimento da identidade visual e do site institucional da PowerBrain, empresa de
+                tecnologia que aplica IoT no setor de energia elétrica. A marca traduz inovação e confiabilidade com um
+                visual tecnológico e contemporâneo.</p>
               <div class="buttons">
                 <div class="btn-card">
                   <a id="meu-link" href="https://powerbrainbr.com" rel="noopener noreferer" target="_blank">
@@ -230,10 +285,9 @@
             </div>
             <div class="content">
               <h2>Sacada Classz</h2>
-              <p class="text">Projeto de identidade visual e site página única para uma empresa que trabalha com
-                fechamento de
-                sacada, guarda-corpo, box e
-                espelhos</p>
+              <p class="text">Criação da identidade visual e desenvolvimento de site one-page para a Sacada Classz,
+                especializada em fechamento de sacadas, guarda-corpos e vidraçarias. O design minimalista valoriza
+                transparência, leveza e sofisticação.</p>
               <div class="buttons">
                 <div class="btn-card">
                   <a id="meu-link" href="https://sacadaclassz.com.br/" rel="noopener noreferer" target="_blank">
@@ -258,7 +312,9 @@
             </div>
             <div class="content">
               <h2>Isaque Móveis</h2>
-              <p class="text">Projeto de criação da Identidade visual para uma loja de móveis.</p>
+              <p class="text">Criação da identidade visual para a loja Isaque Móveis.
+                A marca equilibra solidez e elegância, reforçando a essência artesanal e a qualidade presente em cada
+                peça.</p>
               <div class="buttons">
                 <div class="btn-card">
                   <a id="meu-link" href="https://www.behance.net/gallery/188436653/Isaque-Moveis"
@@ -276,7 +332,9 @@
             </div>
             <div class="content">
               <h2>Universal Music</h2>
-              <p class="text">Projeto de UX design para modernização do layout do site da Universal Music Store.</p>
+              <p class="text">Projeto de UX Design voltado à modernização da experiência de navegação no site da
+                Universal Music Store.
+                A proposta trouxe fluidez, clareza e uma interface mais alinhada à linguagem contemporânea da marca.</p>
               <div class="buttons">
                 <div class="btn-card">
                   <a id="meu-link" href="https://www.behance.net/gallery/174232557/Universal-Music" rel=”noopener
@@ -287,47 +345,6 @@
               </div>
             </div>
           </div>
-
-          <div class="card-work">
-            <div class="img">
-              <img src="./src/images/pokedevs.png" alt="Pokedevs">
-            </div>
-            <div class="content">
-              <h2>Pokedeck (case)</h2>
-              <p class="text">Projeto desenvolvido durante a "Semana do 0 ao Programador" da DevQuest onde foram
-                passados conceitos basicos de HTML, CSS e JavaScript. Ao selecionar um "pokedev" no menu lateral, a
-                interface exibe um card com os dados correspondentes ao personagem escolhido.</p>
-              <div class="buttons">
-                <div class="btn-card">
-                  <a id="meu-link" href="https://robsonsvicero.github.io/projeto-pokedevs/" rel="noopener noreferer"
-                    target="_blank">
-                    <p>Visite o site</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-work">
-            <div class="img">
-              <img src="./src/images/agencia-xyz.png" alt="Agência XYZ">
-            </div>
-            <div class="content">
-              <h2>Agência XYZ (case)</h2>
-              <p class="text">Projeto de landing page para uma agência fictícia, a XYZ, onde utilizamos os conceito de
-                grid e
-                flexbox.</p>
-              <div class="buttons">
-                <div class="btn-card">
-                  <a id="meu-link" href="https://robsonsvicero.github.io/landing-page-com-grid-agencia-xyz/"
-                    rel=”noopener noreferer” target="_blank">
-                    <p>Visite o site</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -414,7 +431,7 @@
           <ul>
             <li><a href="https://wa.me/5511964932007" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href="https://www.instagram.com/robsons.designer/" rel="noopener noreferer" target="_blank"><i
+            <li><a href="https://www.instagram.com/robsonsvicero.dsgr/" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-instagram"></i></a></li>
             <li><a href="https://www.linkedin.com/in/robsonsvicero/" rel="noopener noreferer" target="_blank"><i
                   class="fa-brands fa-linkedin-in"></i></a></li>
