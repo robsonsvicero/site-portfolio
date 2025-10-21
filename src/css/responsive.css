@@ -12,6 +12,10 @@
     padding: 2rem 16rem;
   }
 
+  header .buttons {
+  margin-left: 0px;
+}
+
   .cards-works .interface .card-work {
     width: 100%;
     height: 480px;
@@ -88,7 +92,16 @@
   header.scrolled .nav-list a {
     color: var(--cor-branca) !important;
     transition: 0.4s;
+  }  
+
+  header .buttons {
+    margin-left: 0;
+    margin-top: 40px;
   }
+
+  header .nav-list {
+  flex-direction: column;
+}
   
   /* Classe para exibir o menu */
   .nav-list.active {
@@ -111,6 +124,10 @@
   section.about .informacoes-about,
   section.about .about-img {
     width: 100%;
+  }
+
+  .card-wrapper .card-list {
+    height: 640px;
   }
 
   .cards-works .interface .card-work {
@@ -162,13 +179,10 @@
     padding: 2rem 6rem;
   }
 
-  header .buttons {
-    display: none;
-  }
-
   section.letter-banner {
     height: 560px;
   }
+
   .card-wrapper {
     margin: 0 10px 25px;
   }  
@@ -180,10 +194,6 @@
 
   .card-wrapper .card-list {
     height: 560px;
-  }
-
-  .card-wrapper .card-list .card-item .card-link  {
-    height: 100%;
   }
 
   .card-wrapper .swiper-slide-button {

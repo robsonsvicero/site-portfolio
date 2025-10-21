@@ -42,7 +42,12 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.btn-header {
+.buttons {  
+  margin-left: 10%;
+}
+
+.buttons .btn-header {
+  min-width: 250px;
   padding: 12px 40px;
   border-radius: 100px;
   font-size: var(--fonte-normal);
@@ -68,6 +73,8 @@
 .nav-list {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 40px;
 }
 
