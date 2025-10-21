@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamentos</title>
+
+  <!-- ===========================
+  🔹 FAVICON
+  ============================ -->
+  <link rel="icon" type="image/png" href="./src/images/favicon-32x32.png">
+
+  <!-- Pré-carrega a fonte principal para evitar layout shift -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    as="font" crossorigin>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/schedule.css">
+
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container header-container">
+      <div class="header-content row justify-content-between align-items-center">
+
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="src/images/logo/símbolo_azul.png" alt="Logo Robson Svicero" class="logo logo-blue">
+          </a>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+          <div class="mobile-menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+
+          <ul class="nav-list">
+            <li><a href="index.html" onclick="closeMenu()">Início</a></li>
+            <li><a href="index.html#works" onclick="closeMenu()">Portfólio</a></li>
+            <li><a href="index.html#expertises" onclick="closeMenu()">Serviços</a></li>
+            <li><a href="index.html#about" onclick="closeMenu()">Sobre</a></li>
+            <li><a href="index.html#contact" onclick="closeMenu()">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+  </header>
+  <section class="schedule">
+    <div class="container center">
+      <div class="section-title">
+        <h2>Agende uma reunião e tire seu projeto do papel.</h2>
+        <span class="decorBar"></span>
+      </div>
+      <div class="schedule_content">
+        <h3>Converse comigo sobre design, desenvolvimento ou identidade visual. Vamos definir juntos o melhor caminho
+          para o seu negócio.</h3>
+        <div class="calendly-schedule">
+
+          <!-- Widget em linha do Calendly - início -->
+          <div class="calendly-inline-widget"
+            data-url="https://calendly.com/robsonsvicero-designer/30min?background_color=ffffff&text_color=232323&primary_color=800020"
+            style="min-width:320px;height:700px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Widget em linha do Calendly - fim -->
+           
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container social-container">
+      <div class="social">
+        <nav>
+          <ul>
+            <li><a href="https://wa.me/5511964932007" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/robsonsvicero.dsgr/" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/robsonsvicero/" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/robsonsvicero" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-github-alt"></i></a></li>
+            <li><a href="https://www.behance.net/robsonsvicero" rel="noopener noreferer" target="_blank"><i
+                  class="fa-brands fa-behance"></i></a></li>
+          </ul>
+        </nav>
+
+        <div class="buttons btn-social row">
+          <a href="#header" class="button"><i class="fa-brands fa-space-awesome" rel="noopener noreferer"
+              target="_blank"></i><span>Voltar ao
+              topo</span></a>
+
+        </div>
+
+        <div class="made">
+          <p>Feito com <span>💙</span> em Sampa.</p>
+        </div>
+
+        <div class="rp-footer">
+          <p>© 2025 | Desenvolvido por </p>
+          <div><img src="./src/images/logo_robsonsvicero.png" alt="Logo Robson Svicero"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script defer src="./src/js/index.js"></script>
+  <script src="./src/js/header_schedule.js"></script>
+  <script src="./src/js/app.js"></script>
+
+</body>
+
+</html>
