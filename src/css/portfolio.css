@@ -87,8 +87,12 @@
 	color: #ffffff86;
 }
 
-.interface .card-work .content #meu-link:hover {
-	background-color: #ffffffde;
-	color: var(--cor-primaria);
-	border-color: var(--cor-primaria);
+.interface .card-work .content .btn-card:hover {
+	background-color: #ffffff26;
+	border-color: var(--cor-branca);
+	color: var(--cor-branca);
+}
+
+.interface .card-work .content .btn-card:hover a {
+	color: var(--cor-branca);
 }

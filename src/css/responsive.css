@@ -12,7 +12,7 @@
     padding: 2rem 16rem;
   }
 
-  header .buttons {
+  header .buttons-header {
   margin-left: 0px;
 }
 
@@ -94,7 +94,7 @@
     transition: 0.4s;
   }  
 
-  header .buttons {
+  header .buttons-header {
     margin-left: 0;
     margin-top: 40px;
   }
@@ -241,6 +241,11 @@
   background-image:  linear-gradient(to top, #094C7E, #094C7E0a );
 }
 
+form button {
+  width: 100%;
+  padding: 16px 24px;
+}
+
   .gallery h2,
   .service-description h2,
   .front-content h2{
@@ -301,7 +306,7 @@
 
   a.button {
     width: 100%;
-    padding: 16px 24px;
+    padding: 8px 16px;
   }
 
   .swiper .card-wrapper {

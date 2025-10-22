@@ -101,8 +101,8 @@ body {
 .button {
   padding: 24px 60px;
   border-radius: 100px;
-  font-size: var(--fonte-normal);
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 500;
   letter-spacing: 1px;
   background-color: transparent;
   border: 2px solid var(--cor-primaria);
@@ -111,6 +111,10 @@ body {
   transition: 0.7s;
   position: relative;
   overflow: hidden;
+}
+
+.button i {
+  font-size: 2.5rem;
 }
 
 .button span,
@@ -133,7 +137,11 @@ body {
 }
 
 .button i {
-  margin-right: 8px;
+  margin-right: 16px;
+}
+
+.button:hover {
+  color: var(--cor-branca);
 }
 
 .button:hover::before {

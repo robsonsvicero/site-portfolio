@@ -59,10 +59,17 @@
 
   .card-list .card-link .badge.cta {
     color: #c1c1c1;
-    padding: 0 0 4px;
+    padding: 4px 8px;
     border-radius: 0;
     border-bottom: 2px solid #c1c1c1;
     background-color: transparent;
+  }
+
+  .card-list .card-link .badge.cta:hover {
+    background-color: var(--cor-branca);
+    border: solid 1px var(--cor-secundaria);
+    border-radius: 16px;
+    color: var(--cor-secundaria);
   }
   
   .card-list .card-link .card-title {
