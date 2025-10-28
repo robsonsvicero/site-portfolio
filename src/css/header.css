@@ -89,7 +89,7 @@
   transition: 0.3s;
 }
 
-.nav-list a:hover {
+.item-list:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-branca);
   padding: 10px 24px;
@@ -153,10 +153,10 @@ header.scrolled .mobile-menu.mobile-menu.active span {
   background-color: var(--cor-primaria);
 }
 
-header.scrolled .nav-list a {
+header.scrolled .item-list {
   color: var(--cor-primaria);
 }
 
-header.scrolled .nav-list a:hover {
+header.scrolled .nav-list .item-list:hover {
   color: var(--cor-branca);
 }

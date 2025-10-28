@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
   const mobileMenu = document.querySelector(".mobile-menu");
   const navList = document.querySelector(".nav-list");
-  const navLinks = document.querySelectorAll(".nav-list a");
+  const navLinks = document.querySelectorAll(".item-list");
   const logo = document.querySelector(".logo");
 
   // Função para abrir/fechar menu mobile

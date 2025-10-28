@@ -89,7 +89,7 @@
     border-bottom: 2px solid #ffffff50;
   }
 
-  header.scrolled .nav-list a {
+  header.scrolled .nav-list .item-list {
     color: var(--cor-branca) !important;
     transition: 0.4s;
   }  
