@@ -56,3 +56,11 @@
 .buttons a {
   color: #555b69;
 }
+
+.reviews {
+  padding-top: 10rem;
+}
+
+.reviews .eapps-widget-toolbar {
+  display: none;
+}
