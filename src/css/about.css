@@ -1,5 +1,5 @@
 .about {
-  background-color: #fafafa;
+  background-color: var(--cor-branca);
 }
 
 .center {
