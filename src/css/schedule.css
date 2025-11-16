@@ -21,7 +21,7 @@ body {
   line-height: var(--altura-linha);
   letter-spacing: var(--espaco-letras);
   color: var(--cor-branca);
-  background-color: var(--cor-branca);
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -129,7 +129,7 @@ body {
   top: 0;
   left: 0;
   padding: 2rem 24rem;
-  background-color: #FFFFFF;
+  background-color: var(--cor-branca);
   box-shadow: 0px 1px 12px -1px var(--cor-fundo-cinza-claro);
   z-index: 10;
   transition: 0.5s;

@@ -48,7 +48,7 @@
 .hero-description h1 {
   display: inline-block;
   font-family: var(--fonte-titulo);
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   font-size: 6.4rem;
   letter-spacing: .16rem;
@@ -59,9 +59,9 @@
 
 .hero-description p {
   font-family: var(--fonte-titulo);
-  font-size: var(--fonte-g);
+  font-size: 2rem;
   line-height: 2.8rem;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: .16rem;
   color: var(--cor-branca);
 }
@@ -96,7 +96,9 @@
   padding: 10rem 24rem;
 }
 
-.service-description h2 {
+.service-description h2,
+.gallery h2 {
+  font-family: var(--fonte-titulo);
   font-size: 4.8rem;
   font-weight: 300;
   color: var(--cor-primaria);
@@ -114,6 +116,7 @@
 .service-description li {
   color: #F2F2F2;
   font-size: var(--fonte-g);
+  font-weight: 200;
   margin-bottom: 0.5rem;
 }
 
@@ -133,15 +136,6 @@
 .gallery {
   background-color: #FFF8F0;
   padding: 10rem 24rem;
-}
-
-.gallery h2 {
-  font-size: 4.8rem;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--cor-primaria);
-  margin-bottom: 3.2rem;
 }
 
 .grid-galeria {
@@ -185,12 +179,12 @@
 
 .cta-servico p {
   font-family: var(--fonte-normal);
-  font-size: var(--fonte-m);
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 200;
   margin-bottom: 40px;
 }
 
-.cta-container{
+.cta-container {
   border-radius: 24px;
   padding: 2.4rem 4.8rem;
   background-image: var(--degrade-fundo);

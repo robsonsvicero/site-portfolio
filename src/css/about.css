@@ -51,10 +51,18 @@
   width: 40%;
   height: auto;
   margin-left: 80px;
+  border-radius: 24px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
 }
 
 .buttons a {
-  color: #555b69;
+
+  color: var(--cor-primaria);
 }
 
 .reviews {

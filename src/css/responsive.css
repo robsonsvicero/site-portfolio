@@ -248,9 +248,10 @@ form button {
 
   .gallery h2,
   .service-description h2,
-  .front-content h2{
+  .front-content h2,
+  div.section-title h2 {
     width: 100%;
-    font-size: 3.8rem;
+    font-size: 3.6rem;
   }
 
   .service-description li,
@@ -288,7 +289,7 @@ form button {
 
   h1.title-banner,
   .hero-description h1 {
-    font-size: 3.8rem;
+    font-size: 4.8rem;
   }
 
   p.banner-description {
@@ -304,9 +305,14 @@ form button {
     padding: 0 1.6rem;
   }
 
+.buttons{
+  width: 100%;
+  text-align: center;
+}
+
   a.button {
     width: 100%;
-    padding: 8px 16px;
+    padding: 16px 24px;
   }
 
   .swiper .card-wrapper {
@@ -356,13 +362,6 @@ form button {
 
   .footer .social .rp-footer {
     flex-direction: column;
-  }
-
-  .gallery h2,
-  .service-description h2,
-  .front-content h2{
-    width: 100%;
-    font-size: 3.2rem;
   }
 
   .service-description li,
